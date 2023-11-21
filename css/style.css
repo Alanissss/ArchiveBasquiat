@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+:root{
+    --background: rgb(49, 16, 16);
+    --degrade-btn: white;
+
+}
+
+.background-basquiat {
+    background: var(--background);
+}
+
+/*  classes reutilizavéis   */
+.container {
+    max-width: 1140px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+section,
+footer{
+    padding: 2.7rem 0;
+}
+
+.btn-gradiente {
+    padding: 10px 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    background-image: var(--degrade-btn);
+    font-weight: bold;
+}
+
+/*  classes do site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+}
+
+.ul li {
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a {
+    color: white;
+}
+
+/* main */
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text {
+    width: 50%;
+    color: white;
+    font-weight: bold;
+} 
+
+.main-text h1 {
+    font-size: 4.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img {
+    width: 50%;
+    margin-bottom: -8px;
+}
+
+.main-img img{
+    width: 100%;
+
+}
+
+/* menu-icon */
+.menu-icon {
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+
+/* separacap */
+.separacao {
+    background-color: rgba(31, 29, 29, 0.903);
+}
+
+.separacao .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.separacao .separacao-text {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+
+.separacao .separacao-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.separacao .separacao-text2 p {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.separacao .separacao-text2 p span{
+    font-weight: 600;
+
+}
+
+/* section biography */
+.biography .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.biography .card-history{
+    border-radius: 15px;
+    padding: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.biography .card-history:hover{
+   box-shadow: 0px 10px 67px 8px #d1d1e285;
+}
+
+.biography .card-history img {
+    width: 60%;
+}
+
+.biography .card-history {
+   text-align: justify;
+}
+
+.biography .card-history .titulo {
+    margin: 13px 0;
+    font-weight: 600;
+}
+
+/*section */
+.artworks{
+    background-color: rgba(31, 29, 29, 0.903);
+}
+
+.artworks .container{
+    display: flex;
+    align-items: center;
+}
+
+.artworks .img-artworks {
+    width: 50%;
+}
+
+.artworks  .img-artworks img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.artworks  .img-artworks img:hover {
+    box-shadow: 0px 10px 67px 8px #d1d1e285;
+}
+
+.artworks .text-artworks {
+    width: 50%;
+    padding-left: 90px;
+}
+
+.artworks .text-artworks h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.artworks .text-artworks p {
+    margin: 20px 0;
+    color: white;
+    text-align: justify;
+}
+
+.wikiart .titulo{
+    font-size: 24px;
+    font-weight: 600;
+    color: purple;
+}
+
+.wikiart h2 {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.wikiart .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.wikiart .cards .card-item {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.42);
+    border-radius: 11px;
+    box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.938);
+}
+
+.wikiart .cards img{
+    width: 80px;
+}
+
+/* footer */
+
+footer {
+    background-color: rgba(31, 29, 29, 0.903);
+}
+
+footer .container {
+    display: flex;
+    color: white;
+}
+
+footer .container h3 {
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .container .redes-sociais img {
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+footer .container p {
+    text-align: justify;
+}
+
+
+/* end footer */
+
+/* responsivo */
+@media (max-width: 960px){
+    .menu-icon {
+        display: block;
+    }
+
+    .ul {
+        position: fixed;
+        background-color: rgb(49, 16, 16); 
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.9s;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .ul li {
+        font-size: 20px;
+        margin: 20px 0
+    }
+
+    .ul.ativo{
+        left: 0;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    main .container .main-img,
+    main .container .main-text{
+        width: 100%;
+        text-align: center;
+    }
+
+    main .container .main-text div {
+        justify-content: center;
+    }
+
+    main .container .main-text h1 {
+        font-size: 4rem;
+    }
+
+    .separacao .container{
+        flex-direction: column;
+    }
+
+    .separacao .separacao-text,
+    .separacao .separacao-text2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .separacao-text2 {
+        margin-top: 30px;
+    }
+
+    .biography .container {
+        flex-direction: column;
+    }
+
+    .biography .card-history {
+        width: 100%;
+    }
+
+    .artworks .container{
+        flex-direction: column-reverse;
+    }
+
+    .artworks .text-artworks,
+    .artworks .img-artworks{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .wikiart .cards {
+        flex-direction: column;
+    }
+
+    .wikiart .cards .card-item{
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.42);
+        padding: 30px 0; 
+        margin-bottom: 15px;
+        border-radius: 11px;
+        box-shadow: 0px 25px 97px -15px rgba(0, 0, 0, 0.938);
+    }
+
+    footer .container{
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 440px) {
+    .separacao .separacao-text2{
+        flex-direction: column;
+    }
+
+    main .container .main-text h1 {
+        font-size: 3rem;
+    }
+
+}
